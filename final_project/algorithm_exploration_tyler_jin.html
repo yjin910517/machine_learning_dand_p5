@@ -13046,7 +13046,7 @@ MwUSAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">feature_scaling</span><span class="p">(</span><span class="n">features</span><span class="p">):</span>
@@ -13079,7 +13079,7 @@ MwUSAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Revised based on tester.py</span>
@@ -13155,7 +13155,7 @@ MwUSAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
@@ -13372,7 +13372,7 @@ avg / total       0.80      0.80      0.80        41
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
@@ -13695,7 +13695,7 @@ avg / total       0.95      0.95      0.95        41
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -13920,7 +13920,7 @@ avg / total       0.67      0.82      0.74        44
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
@@ -14081,7 +14081,7 @@ avg / total       0.77      0.88      0.82        41
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -14284,7 +14284,7 @@ avg / total       0.94      0.93      0.92        29
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">features_list</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;poi&#39;</span><span class="p">,</span><span class="s1">&#39;salary&#39;</span><span class="p">,</span> <span class="s1">&#39;deferral_payments&#39;</span><span class="p">,</span> <span class="s1">&#39;total_payments&#39;</span><span class="p">,</span> <span class="s1">&#39;loan_advances&#39;</span><span class="p">,</span> <span class="s1">&#39;bonus&#39;</span><span class="p">,</span>
@@ -14305,17 +14305,22 @@ avg / total       0.94      0.93      0.92        29
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">n_components</span><span class="o">=</span><span class="mi">10</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">n_components</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">features_list</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
 <span class="k">print</span> <span class="s2">&quot;Extracting the top {} components&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_components</span><span class="p">)</span>
 <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
 <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">svd_solver</span><span class="o">=</span><span class="s1">&#39;randomized&#39;</span><span class="p">,</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">whiten</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">features_train</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;done in </span><span class="si">%0.3f</span><span class="s2">s&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span>
 
 <span class="n">explained</span><span class="o">=</span><span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span>
-<span class="k">print</span> <span class="s1">&#39;Top explained ratio:&#39;</span><span class="p">,</span><span class="n">explained</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span> <span class="s1">&#39;Explained ratio:&#39;</span><span class="p">,</span><span class="n">explained</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">explained</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">explained</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">explained</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">explained</span><span class="p">,</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">explained</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -14328,9 +14333,239 @@ avg / total       0.94      0.93      0.92        29
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Extracting the top 10 components
+<pre>Extracting the top 21 components
 done in 0.003s
-Top explained ratio: 0.326655450083
+Explained ratio: [  3.02181259e-01   1.49757954e-01   1.04807597e-01   8.56440568e-02
+   7.63988465e-02   6.46304586e-02   4.10465201e-02   3.49330434e-02
+   3.36893389e-02   2.24396308e-02   2.03603111e-02   1.55799525e-02
+   1.28952470e-02   1.00748526e-02   8.44224776e-03   7.84583374e-03
+   3.96341127e-03   3.55466045e-03   1.73650529e-03   1.82632419e-05
+   1.08238800e-08]
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As the plot indicated, top 1 component explained much more variance than the following ones. Keeping the top 6 components is a reasonable approach.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">n_components</span><span class="o">=</span><span class="mi">6</span>
+<span class="k">print</span> <span class="s2">&quot;Extracting the top {} components&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_components</span><span class="p">)</span>
+<span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">svd_solver</span><span class="o">=</span><span class="s1">&#39;randomized&#39;</span><span class="p">,</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">whiten</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">features_train</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;done in </span><span class="si">%0.3f</span><span class="s2">s&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Extracting the top 6 components
+done in 0.002s
 </pre>
 </div>
 </div>
@@ -14341,7 +14576,7 @@ Top explained ratio: 0.326655450083
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">features_train_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">features_train</span><span class="p">)</span>
@@ -14360,7 +14595,7 @@ Top explained ratio: 0.326655450083
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
@@ -14390,25 +14625,25 @@ Top explained ratio: 0.326655450083
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Fitting done in 2.453s
+<pre>Fitting done in 2.505s
 Best estimator found by grid search:
-DecisionTreeClassifier(class_weight=None, criterion=&#39;gini&#39;, max_depth=5,
+DecisionTreeClassifier(class_weight=None, criterion=&#39;gini&#39;, max_depth=8,
             max_features=None, max_leaf_nodes=None,
-            min_impurity_split=1e-07, min_samples_leaf=8,
+            min_impurity_split=1e-07, min_samples_leaf=5,
             min_samples_split=20, min_weight_fraction_leaf=0.0,
             presort=False, random_state=None, splitter=&#39;best&#39;)
 Predicting on the testing set:
-Done in 0.000s
-Accuracy score: 0.828
+Done in 0.001s
+Accuracy score: 0.897
              precision    recall  f1-score   support
 
-        0.0       0.89      0.92      0.91        26
-        1.0       0.00      0.00      0.00         3
+        0.0       0.93      0.96      0.95        27
+        1.0       0.00      0.00      0.00         2
 
-avg / total       0.80      0.83      0.81        29
+avg / total       0.86      0.90      0.88        29
 
-[[24  2]
- [ 3  0]]
+[[26  1]
+ [ 2  0]]
 </pre>
 </div>
 </div>
@@ -14419,7 +14654,7 @@ avg / total       0.80      0.83      0.81        29
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">clf</span><span class="o">=</span><span class="n">clf</span><span class="o">.</span><span class="n">best_estimator_</span>
@@ -14436,16 +14671,16 @@ avg / total       0.80      0.83      0.81        29
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy:0.797; Precision:0.166; Recall:0.131;
+<pre>Accuracy:0.799; Precision:0.12; Recall:0.08;
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[73]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[48]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(0.7969333333333334, 0.16645408163265307, 0.1305)</pre>
+<pre>(0.7992666666666667, 0.12021036814425244, 0.08)</pre>
 </div>
 
 </div>
