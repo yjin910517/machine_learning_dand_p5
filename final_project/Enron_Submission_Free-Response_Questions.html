@@ -11762,7 +11762,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The goal of this project is to identify Enron's POI with real historic dataset, which includes financial data and email data of ~150 Enron employees. Since the dataset is high dimensional and the correlation between features and POI identiy is difficult to reveal with manual exploration, machine learning can be a good tool. This is a typical classification problem with two categories (POI &amp; Non-POI).</p>
-<p>There are 146 data points in original dataset (145 people and 1 total). 23 features are included. Besides 'total', no suspicious outliers should be removed, since the extremely high values are likely to be real financial data of Enron's managerial people.</p>
+<p>There are 146 data points in original dataset (145 people and 1 total). 18 of them are poi and 127 of them are non-poi. 23 features are included. Besides 'total', no suspicious outliers should be removed, since the extremely high values are likely to be real financial data of Enron's managerial people.</p>
 <p>Missing values are represented by 'NaN', the # of missing values is high for many features, they are going be replaced by zero.</p>
 <p>{'to_messages': 59, 'deferral_payments': 107, 'expenses': 51, 'deferred_income': 97, 'email_address': 34, 'from_poi_to_this_person': 59, 'poi_from_rate': 59, 'restricted_stock_deferred': 128, 'shared_receipt_with_poi': 59, 'loan_advances': 142, 'from_messages': 59, 'other': 53, 'director_fees': 129, 'bonus': 64, 'total_stock_value': 20, 'from_this_person_to_poi': 59, 'long_term_incentive': 80, 'restricted_stock': 36, 'salary': 51, 'total_payments': 21, 'poi_to_rate': 59, 'exercised_stock_options': 44}</p>
 <hr>
@@ -11889,14 +11889,27 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The performance of my final submission is tested with tester.py.</p>
 <ul>
-<li>The accuracy is 0.86886: among all test data points, 86.9% of them were correctly classified)</li>
-<li>The precision is 0.54795: among all people predicted as POI, 54.8% of them were truly POI</li>
-<li>The recall is 0.46850: among all real POI, 46.9% of them were correctly predicted as POI</li>
+<li>The accuracy is 0.87079: among all test data points, 87.1% of them were correctly classified)</li>
+<li>The precision is 0.55096: among all people predicted as POI, 55.1% of them were truly POI</li>
+<li>The recall is 0.50000: among all real POI, 50% of them were correctly predicted as POI</li>
 </ul>
 <hr>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
     </div>
   </div>

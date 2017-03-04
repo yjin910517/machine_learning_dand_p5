@@ -40,10 +40,10 @@ labels, features = targetFeatureSplit(data)
 ### Multiple classifiers were tried in file 'algorithm_exploration_tyler_jin.ipynb', detail process can be reviewed there.
 ### Here I only adopt the selected classifier.
 from sklearn.tree import DecisionTreeClassifier
-clf=DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=5,
+clf=DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=3,
             max_features=None, max_leaf_nodes=None,
             min_impurity_split=1e-07, min_samples_leaf=8,
-            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            min_samples_split=20, min_weight_fraction_leaf=0.0,
             presort=False, random_state=None, splitter='best')
 
 
